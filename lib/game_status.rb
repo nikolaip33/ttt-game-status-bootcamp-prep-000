@@ -22,5 +22,15 @@ end
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     puts "going!"
+    if postion_taken(board, combination[0])
+      current = []
+      combination.each do |i|
+        current << board[i]
+      end
+      token = current[0]
+      if current.all?{ |space| space == token }
+        current
+      end
+    end
   end
 end
