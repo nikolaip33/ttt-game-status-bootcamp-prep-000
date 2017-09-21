@@ -34,5 +34,6 @@ def won?(board)
         end
         current
       end
+    end
   end
 end
