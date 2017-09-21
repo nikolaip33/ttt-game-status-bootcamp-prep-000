@@ -20,6 +20,7 @@ def full?(board)
 end
 
 def won?(board)
+  puts "FIRST STEP"
   WIN_COMBINATIONS.each do |combination|
     if position_taken?(board, combination[0])
       puts "going!"
