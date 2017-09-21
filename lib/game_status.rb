@@ -23,7 +23,7 @@ def won?(board)
   puts "FIRST STEP"
   WIN_COMBINATIONS.each do |combination|
     board_test = []
-    if (position_taken?(board, combination[0]) && position_taken?(board, combination[1]) && position_taken?(board, combination[2])
+    if (position_taken?(board, combination[0]) && position_taken?(board, combination[1]) && position_taken?(board, combination[2]))
       combination.each do |i|
         board_test << board[i]
         puts "added #{board[i]} to array"
