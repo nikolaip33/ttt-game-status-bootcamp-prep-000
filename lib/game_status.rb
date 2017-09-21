@@ -23,7 +23,6 @@ def won?(board)
   puts "going!"
   WIN_COMBINATIONS.each do |combination|
     puts "going!"
-=begin
     if !postion_taken(board[combination[0]])
       puts "doing!"
       current = []
@@ -41,6 +40,5 @@ def won?(board)
     else
       false
     end
-=end
   end
 end
