@@ -21,6 +21,8 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    
+    if position_taken?(board, combination[0])
+      puts "going!"
+    end
   end
 end
