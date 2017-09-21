@@ -30,7 +30,7 @@ def won?(board)
       end #combination.each
       token = board_test[0]
       if board_test.all? { |space| space == token }
-        return board_test
+        return combination
       end #if board_test.all?
     end #if position_taken
   end #WIN_COMBINATIONS.each
