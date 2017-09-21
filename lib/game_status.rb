@@ -34,4 +34,5 @@ def won?(board)
       end #if board_test.all?
     end #if position_taken
   end #WIN_COMBINATIONS.each
+  false
 end #def
