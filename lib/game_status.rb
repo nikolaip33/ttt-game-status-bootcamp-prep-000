@@ -28,9 +28,7 @@ def won?(board)
         current << board[i]
       end
       token = current[0]
-      if current.all? do |space|
-          space == token
-        end
+      if current.all?{ |space| space == token }
         current
       end
     end
