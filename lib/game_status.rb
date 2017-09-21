@@ -28,11 +28,9 @@ def won?(board)
         board_test << board[i]
       end #combination.each
       token = board_test[0]
-      if 
-
-      end
-        
-      end
+      if board_test.all? { |space| space == token }
+        return board_test
+      end #if board_test.all?
     end #if position_taken
   end #WIN_COMBINATIONS.each
 end #def
