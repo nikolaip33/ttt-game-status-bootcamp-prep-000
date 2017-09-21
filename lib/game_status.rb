@@ -33,11 +33,5 @@ def won?(board)
           space == token
         end
         current
-      else
-        false
-      end
-    else
-      false
-    end
   end
 end
