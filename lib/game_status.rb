@@ -21,12 +21,11 @@ end
 
 def won?(board)
   puts "FIRST STEP"
-  win = false
   WIN_COMBINATIONS.each do |combination|
     board_test = []
     if position_taken?(board, combination[0])
       combination.each do |i|
-        board_test << combination[i]
+        board_test << board[i]
       end #combination.each
       puts board_test
     end #if position_taken
