@@ -23,10 +23,12 @@ def won?(board)
   puts "FIRST STEP"
   WIN_COMBINATIONS.each do |combination|
     board_test = []
-    puts "board_test_init"
-    if position_taken?(board, combination[0])
+    if  (position_taken?(board, combination[0]) 
+      && position_taken?(board, combination[1]) 
+      && position_taken?(board, combination[2])
       combination.each do |i|
         board_test << board[i]
+        puts "added #{board[i]} to array"
       end #combination.each
       token = board_test[0]
       if board_test.all? { |space| space == token }
