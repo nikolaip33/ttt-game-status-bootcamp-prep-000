@@ -27,7 +27,12 @@ def won?(board)
       combination.each do |i|
         board_test << board[i]
       end #combination.each
-      puts board_test
+      token = board_test[0]
+      if 
+
+      end
+        
+      end
     end #if position_taken
   end #WIN_COMBINATIONS.each
 end #def
