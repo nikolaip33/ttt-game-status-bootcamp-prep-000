@@ -20,7 +20,6 @@ def full?(board)
 end
 
 def won?(board)
-  current = []
   puts "going!"
   WIN_COMBINATIONS.each do |combination|
     puts "going!"
