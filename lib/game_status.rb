@@ -20,8 +20,8 @@ def full?(board)
 end
 
 def won?(board)
-
   var current = []
+  puts "going!"
   WIN_COMBINATIONS.each do |combination|
     puts "going!"
 =begin
