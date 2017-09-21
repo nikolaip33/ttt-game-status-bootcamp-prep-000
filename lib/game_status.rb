@@ -26,7 +26,6 @@ def won?(board)
       current = []
       combination.each do |i|
         current << board[i]
-        return current
       end
       token = current[0]
       if current.all?{ |space| space == token }
