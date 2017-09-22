@@ -15,10 +15,6 @@ WIN_COMBINATIONS = [
     [2,4,6]
 ]
 
-def full?(board)
-  !board.detect{|i| i == " "}
-end
-
 def won?(board)
   puts "FIRST STEP"
   WIN_COMBINATIONS.each do |combination|
@@ -37,6 +33,10 @@ def won?(board)
   false
 end #def
 
+def full?(board)
+  !board.detect{|i| i == " "}
+end
+
 def winner(board)
   result = won?(board)
   if result
@@ -44,6 +44,10 @@ def winner(board)
   end
 end
 
+def draw(board)
+  !won(board)
+end
+
 def over?(board)
-  !won?(board)
+  full?(board) || won?(board)
 end
