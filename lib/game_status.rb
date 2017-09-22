@@ -36,3 +36,10 @@ def won?(board)
   end #WIN_COMBINATIONS.each
   false
 end #def
+
+def winner(board)
+  result = won?(board)
+  if result
+    return result[0]
+  end
+end
