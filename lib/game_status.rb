@@ -44,8 +44,8 @@ def winner(board)
   end
 end
 
-def draw(board)
-  !won(board)
+def draw?(board)
+  over?(board) && !won(board)
 end
 
 def over?(board)
