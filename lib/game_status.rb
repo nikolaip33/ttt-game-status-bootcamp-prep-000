@@ -45,5 +45,5 @@ def winner(board)
 end
 
 def over?(board)
-  !winner(board)
+  !won?(board)
 end
