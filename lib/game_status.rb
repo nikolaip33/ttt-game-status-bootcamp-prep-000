@@ -39,8 +39,11 @@ end #def
 
 def winner(board)
   result = won?(board)
-  puts result
   if result
     return board[result[0]]
   end
+end
+
+def over?(board)
+  !winner(board)
 end
